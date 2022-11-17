@@ -1,0 +1,66 @@
+{
+  "foods": [
+    {
+      "category": "Burger",
+      "title": "Chicken Burger",
+      "description": "Buns at the ready! Coat or marinade chicken thighs and breast to create the perfect filling for juicy burgers",
+      "price": "400",
+      "img1": "https://www.citypng.com/public/uploads/preview/fried-chicken-burger-png-image-116531548628ikmveuocz.png",
+      "id": 1
+    },
+    {
+      "category": "Pizza",
+      "title": "Chicken",
+      "description": "Пи́цца — традиционное итальянское блюдо в виде круглой дрожжевой лепёшки, выпекаемой с уложенной сверху начинкой из томатного соуса,!",
+      "price": 400,
+      "img1": "https://www.pngplay.com/wp-content/uploads/2/Cheese-Pizza-PNG-Clipart-Background.png",
+      "id": 4
+    },
+    {
+      "category": "Bread",
+      "title": "White",
+      "description": "Хлеб — хлебобулочное изделие, получаемое путём выпекания теста, разрыхлённого дрожжами или закваской. ",
+      "price": 400,
+      "img1": "https://i.pinimg.com/originals/6f/5f/53/6f5f5332cd54ba419022a4882935dbd5.png",
+      "id": 6
+    },
+    {
+      "category": "Bread",
+      "title": "Gray",
+      "description": "Хлеб — хлебобулочное изделие, получаемое путём выпекания теста, разрыхлённого дрожжами или закваской. ",
+      "price": 400,
+      "img1": "https://png.monster/wp-content/uploads/2022/06/png.monster-616-370x247.png",
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "name": "Мика",
+      "age": "23",
+      "pass": "12",
+      "confPass": "12",
+      "id": 1
+    },
+    {
+      "name": "Eridan",
+      "age": "23",
+      "pass": "12",
+      "confPass": "12",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "user": "123",
+      "text": "jhg",
+      "foodId": "1",
+      "id": 1
+    },
+    {
+      "user": "makers",
+      "text": "Excellent",
+      "foodId": "4",
+      "id": 2
+    }
+  ]
+}
