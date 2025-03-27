@@ -35,6 +35,7 @@ const AddFood = () => {
       price: +price,
       img1
     };
+    
     addFood(obj);
     navigate("/foods");
     setCategory("");

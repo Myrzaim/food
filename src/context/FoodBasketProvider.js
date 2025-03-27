@@ -42,8 +42,7 @@ const FoodBasketProvider = ({ children }) => {
       subPrice: foodObj.price,
     };
 
-    console.log(basket);
-    console.log(basket.foods);
+  
     // Хранение дубликатов
     let filterBasket = basket.foods.filter((elem) => {
       return elem.item.id === foodObj.id;
@@ -56,6 +55,7 @@ const FoodBasketProvider = ({ children }) => {
     } else {
       basket.foods.push(newFood);
     }
+    
 
     basket.totalPrice = calcTotalPrice(basket.foods);
     localStorage.setItem("basket", JSON.stringify(basket));

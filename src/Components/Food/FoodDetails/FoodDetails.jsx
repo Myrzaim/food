@@ -19,7 +19,6 @@ const FoodDetails = () => {
     const [text, setText] = useState("");
 
     function handleAdd(e) {
-        e.preventDefault(); // останавливает автообновление бразуреа при отправке данных через form
         if (!text.trim()) {
             alert("Заполните все поля!");
             return;
@@ -28,7 +27,8 @@ const FoodDetails = () => {
             user: currentUser.name,
             text,
             foodId: id
-            };
+        };
+        
         addComment(commentObj);
         comm.push(commentObj);
         setText("");

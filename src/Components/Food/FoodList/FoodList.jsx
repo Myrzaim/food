@@ -68,7 +68,7 @@ const FoodList = () => {
           <Col lg='2'>
             <div className="food__category search__inp">    
             <TextField  placeholder="Поиск…" 
-        inputProps={{ "aria-label": "search" }}
+        inputProps={{ "aria-label": "search" }} value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}></TextField>
             </div>
           </Col>
@@ -99,7 +99,7 @@ const FoodList = () => {
         </Col>
                 <Col lg='2'>
                     
-            <div className="food__category d-flex align-items-center justify-content-center gap-4">     
+            <div className="food__category food d-flex align-items-center justify-content-center gap-4">     
              <Link to = '/addfood'>
          <button className='d-flex align-items-end gap-2'>
            <i class="ri-add-box-line"></i>
@@ -108,8 +108,8 @@ const FoodList = () => {
                 </Link> 
                         </div> 
           </Col>
-          { foodsArr ? foodsArr.map((item) => (
-              <Col lg="3" md="4" sm="6" xs="6" key={item.id} className="mb-4">
+          {foodsArr ? foodsArr.map((item) => ( 
+              <Col lg="3" md="4" sm="6" xs="6" key={item.id} className="mb-5">
                 <FoodCard obj={item} />
               </Col>
         )) : null}

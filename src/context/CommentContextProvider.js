@@ -5,10 +5,9 @@ const API = " http://localhost:8000/comments";
 
 export const commentContext = createContext();
 
-
 const CommentContextProvider = (props) => {
-    const [comment, setComment] = useState(null);
-    const [comm, setComm] = useState(null);
+  const [comment, setComment] = useState(null);
+  const [comm, setComm] = useState(null);
 
   // create comment
   async function addComment(newComment) {
@@ -26,7 +25,7 @@ const CommentContextProvider = (props) => {
     try {
       const data = await axios.get(API);
       const result = data.data.filter((item) => item.foodId === id);
-        setComm(result);
+      setComm(result);
       return result;
     } catch (error) {
       console.log(error);
